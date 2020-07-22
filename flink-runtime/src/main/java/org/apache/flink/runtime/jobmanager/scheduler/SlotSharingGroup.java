@@ -33,6 +33,7 @@ import static org.apache.flink.util.Preconditions.checkNotNull;
  * deployed together within a slot. This is a soft permission, in contrast to the hard constraint
  * defined by a co-location hint.
  */
+//slot共享实现类 可以让subtasks共享一个slot
 public class SlotSharingGroup implements java.io.Serializable {
 
 	private static final long serialVersionUID = 1L;
